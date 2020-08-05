@@ -1,0 +1,88 @@
+<div class="page-content-wrapper">
+  <div class="page-content">
+    <!-- BEGIN PAGE HEAD -->
+    <div class="page-head">
+      <!-- BEGIN PAGE TITLE -->
+      <div class="page-title">
+        <h1>Tạo đơn hàng</h1>
+      </div>
+      <!-- END PAGE TITLE -->
+    </div>
+    <!-- END PAGE HEAD -->
+    <!-- BEGIN PAGE BREADCRUMB -->
+    <ul class="page-breadcrumb breadcrumb">
+      <li>
+        <a [routerLink]="['dashboard']">Home</a>
+        <i class="fa fa-circle"></i>
+      </li>
+      <li>
+        <a href="#">Quản lý đơn hàng</a>
+        <i class="fa fa-circle"></i>
+      </li>
+      <li class="active">
+        Tạo đơn hàng
+      </li>
+    </ul>
+    <!-- END PAGE BREADCRUMB -->
+
+    <!-- BEGIN PAGE CONTENT-->
+    <div class="row">
+      <!-- thongtinkhachhang -->
+      <app-thongtinkhachhang></app-thongtinkhachhang>
+      <!-- endthongtinkhachhang -->
+      <div class="col-md-12">
+        <div class="tabbable tabbable-custom tabbable-noborder  tabbable-reversed">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a href="#tab_0" data-toggle="tab">
+                Đơn hàng hợp đồng
+              </a>
+            </li>
+            <li>
+              <a href="#tab_1" data-toggle="tab">
+                Đơn hàng nông thôn mới
+              </a>
+            </li>
+            <li>
+              <a href="#tab_2" data-toggle="tab">
+                Đơn hàng khuyến mãi
+              </a>
+            </li>
+            <li>
+              <a href="#tab_3" data-toggle="tab">
+                Đơn hàng không hợp đồng
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab_0">
+              <!-- don hang hop dong -->
+              <app-don-hop-dong></app-don-hop-dong>
+              <!-- chi tiet don hang -->
+              <!-- <app-chitiethoadon></app-chitiethoadon> -->
+            </div>
+            <div class="tab-pane" id="tab_1">
+              <!-- don nong thon moi -->
+              <app-don-nong-thon-moi></app-don-nong-thon-moi>
+              <!-- chi tiet don hang -->
+              <app-chitiethoadon></app-chitiethoadon>
+            </div>
+            <div class="tab-pane" id="tab_2">
+              <!-- don khuyen mai -->
+              <app-don-khuyen-mai></app-don-khuyen-mai>
+              <!-- chi tiet don hang -->
+              <app-chitiethoadon></app-chitiethoadon>
+            </div>
+            <div class="tab-pane" id="tab_3">
+              <!-- don khong hop dong -->
+              <app-don-khong-hop-dong></app-don-khong-hop-dong>
+              <!-- chi tiet don hang -->
+              <app-chitiethoadon></app-chitiethoadon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END PAGE CONTENT-->
+  </div>
+</div>

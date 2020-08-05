@@ -1,0 +1,128 @@
+<div class="portlet box yellow">
+  <div class="portlet-title">
+    <div class="caption">
+      Chi tiết đơn hàng
+    </div>
+    <div class="tools">
+      <a href="javascript:;" class="collapse">
+      </a>
+    </div>
+  </div>
+  <div class="portlet-body">
+    <form [formGroup]="formChiTiet">
+      <div class="table-scrollable">
+        <table class="table table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">
+                <input type="checkbox" name="checkbox">
+              </th>
+              <th scope="col">
+                MSGH
+              </th>
+              <th scope="col" style="min-width: 200px">
+                Loại đơn hàng
+              </th>
+              <th scope="col">
+                P/Tiện
+              </th>
+              <th scope="col" style="min-width: 100px">
+                Rờ-mooc
+              </th>
+              <th scope="col" style="min-width: 100px">
+                S/Lượng
+              </th>
+              <th scope="col" style="min-width: 100px">
+                ĐĐVT
+              </th>
+              <th scope="col" style="min-width: 100px">
+                Đơn giá
+              </th>
+              <th scope="col" style="min-width: 200px">
+                Chiết khấu
+              </th>
+              <th scope="col">
+                Giá trị
+              </th>
+              <th scope="col" style="min-width: 100px">
+                Loại tiền
+              </th>
+              <th scope="col" style="min-width: 100px">
+                Tên tài xế
+              </th>
+              <th scope="col" style="min-width: 100px">
+                Ghi chú
+              </th>
+              <th scope="col" style="min-width: 200px">
+                Sản phẩm
+              </th>
+              <th scope="col">
+                Loại vỏ bao
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let hd of hoaDon; index as index">
+              <td class="text-center">
+                <input type="checkbox" value="{{index}}" (change)="onCheckboxChange($event)">
+              </td>
+              <td>
+
+              </td>
+              <td>
+                {{hd.orderType}}
+              </td>
+              <td>
+                {{hd.vehicle}}
+              </td>
+              <td>
+                {{hd.mooc}}
+              </td>
+              <td>
+                {{hd.soluong}}
+              </td>
+              <td>
+                {{hd.ddvt}}
+              </td>
+              <td>
+                {{hd.dongia | number}}
+              </td>
+              <td>
+                {{hd.chietkhau}}
+              </td>
+              <td>
+                {{hd.giatri}}
+              </td>
+              <td>
+                {{hd.loaitien}}
+              </td>
+              <td>
+                {{hd.tentaixe}}
+              </td>
+              <td>
+                {{hd.ghichu}}
+              </td>
+              <td>
+                {{hd.sanpham}}
+              </td>
+              <td>
+                {{hd.loaivobao}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-actions">
+        <div class="row">
+          <div class="col-md-12 text-right">
+            <button type="button" class="btn green" (click)="themDong()">Thêm dòng</button>
+            <button type="button" class="btn red" (click)="xoaDong()">Xóa dòng</button>
+            <button type="button" class="btn yellow">Đặt hàng</button>
+            <button type="button" class="btn default">Hủy</button>
+          </div>
+        </div>
+      </div>
+      <!-- END FORM-->
+    </form>
+  </div>
+</div>

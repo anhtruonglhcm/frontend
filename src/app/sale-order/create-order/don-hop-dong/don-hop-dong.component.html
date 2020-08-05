@@ -1,0 +1,233 @@
+<div class="portlet box yellow">
+  <div class="portlet-title">
+    <div class="caption">
+      Thông tin đơn hàng
+    </div>
+    <div class="tools">
+      <a href="javascript:;" class="collapse">
+      </a>
+    </div>
+  </div>
+  <div class="portlet-body form">
+    <!-- BEGIN FORM-->
+    <form (ngSubmit)="onSubmit()" class="form-horizontal" [formGroup]="formHopDong">
+      <div class="form-body">
+        <div class="row">
+          <!-- <div class="col-md-12">
+            <div class="form-group">
+                <label class="control-label col-md-2">Ngày đặt hàng</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control"
+                           value="15/05/2020" disabled>
+                    <span class="help-block"></span>
+                </div>
+            </div>
+        </div> -->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Hợp đồng</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1">58/2020/TTDV-HĐMB</option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">P/thức vận
+                chuyển</label>
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <select name="foo" class="select2me form-control">
+                      <option value="1">Đường bộ</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-6">
+                    <select name="foo" class="select2me form-control">
+                      <option value="1"></option>
+                    </select>
+                  </div>
+                </div>
+                <span class="help-block"></span>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Nơi nhận
+                hàng</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1">Kho XNTT ở Bình Phước</option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Số lượng</label>
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-xs-8">
+                    <input type="text" class="form-control" value="0">
+                  </div>
+                  <div class="col-xs-4">
+                    <select name="foo" class="select2me form-control">
+                      <option value="1">TAN</option>
+                    </select></div>
+                </div>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Địa bàn</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1">Công Trình</option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Bảng giá</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1"></option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Điểm xác
+                nhận</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1">Các trạm bê Tông Lê Phan
+                    (Thủy)</option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Đơn giá</label>
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-xs-8">
+                    <input type="text" class="form-control" value="" readonly>
+                  </div>
+                  <div class="col-xs-4">
+                    <select name="foo" class="select2me form-control" disabled>
+                      <option value="1"></option>
+                    </select>
+                  </div>
+                </div>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Sản phẩm</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1">Xi Măng Vicem Hà Tiên Công
+                    Nghiệp PCB40 - Rời</option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Phương
+                tiện</label>
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-5">
+                    <input type="text" class="form-control" value="51D 40014">
+                    <span class="help-block"></span>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-check">
+                      <input type="checkbox" checked="checked" class="form-check-input" />
+                    </div>
+
+                  </div>
+                  <div class="col-md-5">
+                    <input type="text" class="form-control" value="51R 21268">
+                    <span class="help-block"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Loại vỏ
+                bao</label>
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <select name="foo" class="select2me form-control">
+                      <option value="1">XA</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-6">
+                    <select name="foo" class="select2me form-control">
+                      <option value="1">Jumbo NPP</option>
+                    </select>
+                  </div>
+                </div>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Tên tài xế</label>
+              <div class="col-md-8">
+                <input type="text" class="form-control" value="Hải Bộ Đội">
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Ghi chú</label>
+              <div class="col-md-8">
+                <input type="text" class="form-control" value="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-6">
+            <div class="form-group">
+                <label class="control-label col-md-4">Về việc</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control"
+                           value="Vận chuyển xi măng rời PC40">
+                    <span class="help-block"></span>
+                </div>
+            </div>
+        </div> -->
+        </div>
+      </div>
+    </form>
+    <!-- END FORM-->
+  </div>
+</div>
+<app-chitiethoadon [data]="formHopDong"></app-chitiethoadon>

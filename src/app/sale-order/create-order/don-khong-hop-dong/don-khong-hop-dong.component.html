@@ -1,0 +1,182 @@
+<div class="portlet box yellow">
+  <div class="portlet-title">
+    <div class="caption">
+      Thông tin đơn hàng
+    </div>
+    <div class="tools">
+      <a href="javascript:;" class="collapse">
+      </a>
+    </div>
+  </div>
+  <div class="portlet-body form">
+    <!-- BEGIN FORM-->
+    <form [formGroup]="formKhongHopDong" class="form-horizontal">
+      <div class="form-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Loại đơn hàng</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control" formControlName="type">
+                  <option *ngFor="let i of type" value="{{i.id}}">{{i.name}}</option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Nơi giao hàng</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1">Công ty CP xi măng Bỉm Sơn</option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Đề xuất</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1"></option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Mã vùng</label>
+              <div class="col-md-8">
+                <input type="text" class="form-control" value="1.29.01">
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Địa bàn</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1">Địa bàn Hà Nội</option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">P/thức vận chuyển</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1">Đường bộ</option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Sản phẩm</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1">Xi măng rời PC40</option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Bảng giá</label>
+              <div class="col-md-8">
+                <select name="foo" class="select2me form-control">
+                  <option value="1">Giá bán xi măng T1/2020</option>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Số lượng</label>
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-xs-8">
+                    <input type="text" class="form-control" value="20">
+                  </div>
+                  <div class="col-xs-4">
+                    <select name="foo" class="select2me form-control">
+                      <option value="1">TAN</option>
+                    </select></div>
+                </div>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Đơn giá</label>
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-xs-8">
+                    <input type="text" class="form-control" value="981.818,182">
+                  </div>
+                  <div class="col-xs-4">
+                    <select name="foo" class="select2me form-control">
+                      <option value="1">VND</option>
+                    </select>
+                  </div>
+                </div>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="control-label col-md-2">Phương tiện</label>
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-5">
+                    <select name="foo" class="select2me form-control">
+                      <option value="1">15C-123.45</option>
+                    </select>
+                    <span class="help-block"></span>
+                  </div>
+                  <label class="control-label col-md-2">Mooc</label>
+                  <div class="col-md-5">
+                    <select name="foo" class="select2me form-control">
+                      <option value="1">15C-234.56</option>
+                    </select>
+                    <span class="help-block"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Tên tài xế</label>
+              <div class="col-md-8">
+                <input type="text" class="form-control" value="PHẠM THANH BÌNH">
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label col-md-4">Về việc</label>
+              <div class="col-md-8">
+                <input type="text" class="form-control" value="Vận chuyển xi măng rời PC40">
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- END FORM-->
+  </div>
+</div>

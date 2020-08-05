@@ -1,0 +1,145 @@
+<div class="page-sidebar-wrapper">
+  <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+  <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+  <div class="page-sidebar md-shadow-z-2-i  navbar-collapse collapse">
+    <!-- BEGIN SIDEBAR MENU -->
+    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+    <ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+      <li class="start active">
+        <a [routerLink]="['/dashboard']">
+          <i class="icon-home"></i>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <i class="icon-basket"></i>
+          <span class="title">Quản lý đơn hàng</span>
+          <span class="arrow "></span>
+        </a>
+        <ul class="sub-menu">
+          <li>
+            <a [routerLink]="['/dashboard/create-order']">Tạo mới đơn hàng</a>
+          </li>
+          <li>
+            <a [routerLink]="['/dashboard/list-order']">Danh sách đơn hàng</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a [routerLink]="['/report/liabilities']">
+          <i class="icon-bar-chart"></i>
+          <span class="title">Công nợ khách hàng</span>
+          <!-- <span class="arrow "></span> -->
+        </a>
+        <!-- <ul class="sub-menu">
+          <li>
+            <a href="javascript:;">Thấu chi</a>
+          </li>
+          <li>
+            <a href="javascript:;">Bảo lãnh</a>
+          </li>
+          <li>
+            <a href="javascript:;">Thanh toán, bù trừ</a>
+          </li>
+        </ul> -->
+      </li>
+      <li>
+        <a [routerLink]="['/report/periodic-debt']">
+          <i class="icon-graph"></i>
+          <span class="title">Công nợ theo kỳ</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/management/delivery-network']">
+          <i class="icon-link"></i>
+          <span class="title">Mạng lưới giao hàng</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <i class="icon-plane"></i>
+          <span class="title">Nhà phân phối</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/management/ship-point']">
+          <i class="icon-pointer"></i>
+          <span class="title">Điểm giao hàng</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/management/area']">
+          <i class="icon-tag"></i>
+          <span class="title">Danh mục địa bàn</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/management/area-supplier']">
+          <i class="icon-puzzle"></i>
+          <span class="title">Quản lý mã vùng NPP</span>
+        </a>
+      </li>
+      <li class="last">
+        <a href="javascript:;">
+          <i class="icon-rocket"></i>
+          <span class="title">Phương tiện di chuyển</span>
+          <span class="arrow "></span>
+        </a>
+        <ul class="sub-menu">
+          <li>
+            <a href="javascript:;">Xe</a>
+          </li>
+          <li>
+            <a href="javascript:;">Rơ moóc</a>
+          </li>
+          <li>
+            <a href="javascript:;">Tài xế</a>
+          </li>
+          <li>
+            <a href="javascript:;">Đăng ký xe với NPP</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <i class="icon-paper-plane"></i>
+          <span class="title">Chính sách</span>
+          <span class="arrow "></span>
+        </a>
+        <ul class="sub-menu">
+          <li>
+            <a href="javascript:;">Bảng giá</a>
+          </li>
+          <li>
+            <a href="javascript:;">Chiết khấu thương mại</a>
+          </li>
+          <li>
+            <a href="javascript:;">Chiết khấu sản lượng</a>
+          </li>
+        </ul>
+      </li>
+      <li class="last">
+        <a href="javascript:;">
+          <i class="icon-settings"></i>
+          <span class="title">Hệ thống</span>
+          <span class="arrow "></span>
+        </a>
+        <ul class="sub-menu">
+          <li>
+            <a href="javascript:;">Danh sách tài khoản</a>
+          </li>
+          <li>
+            <a href="javascript:;">Thiết lập chung</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- END SIDEBAR MENU -->
+  </div>
+</div>

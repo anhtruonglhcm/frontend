@@ -1,0 +1,167 @@
+<div class="page-content-wrapper">
+  <div class="page-content">
+    <!-- BEGIN PAGE HEAD -->
+    <div class="page-head">
+      <!-- BEGIN PAGE TITLE -->
+      <div class="page-title">
+        <h1>Danh sách đơn hàng</h1>
+      </div>
+      <!-- END PAGE TITLE -->
+    </div>
+    <!-- END PAGE HEAD -->
+    <!-- BEGIN PAGE BREADCRUMB -->
+    <ul class="page-breadcrumb breadcrumb">
+      <li>
+        <a [routerLink]="['dashboard']">Home</a>
+        <i class="fa fa-circle"></i>
+      </li>
+      <li>
+        <a href="#">Quản lý đơn hàng</a>
+        <i class="fa fa-circle"></i>
+      </li>
+      <li class="active">
+        Danh sách đơn hàng
+      </li>
+    </ul>
+    <!-- END PAGE BREADCRUMB -->
+
+    <!-- BEGIN PAGE CONTENT-->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="portlet box yellow">
+          <div class="portlet-title">
+            <div class="caption">
+              Danh sách đơn hàng
+            </div>
+            <div class="tools">
+              <a href="javascript:;" class="collapse">
+              </a>
+            </div>
+          </div>
+          <div class="portlet-body">
+            <!-- BEGIN FORM-->
+            <form action="#" class="form-horizontal">
+              <div class="form-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="control-label col-md-4 col-md-offset-4">Từ ngày</label>
+                      <div class="col-md-4">
+                        <input type="text" class="form-control" value="01/01/2020">
+                        <span class="help-block"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="control-label col-md-4">Đến ngày</label>
+                      <div class="col-md-4">
+                        <input type="text" class="form-control" value="01/01/2020">
+                        <span class="help-block"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button class="btn yellow">Hiển thị</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- END FORM-->
+            <table class="table table-striped table-bordered table-hover" id="sample_1">
+              <thead>
+                <tr>
+                  <th>
+                    H.Đ
+                  </th>
+                  <th>
+                    Khách hàng
+                  </th>
+                  <th>
+                    Số HĐ
+                  </th>
+                  <th>
+                    Sản phẩm
+                  </th>
+                  <th>
+                    P.tiện
+                  </th>
+                  <th>
+                    Đ.ký
+                  </th>
+                  <th>
+                    T.xuất
+                  </th>
+                  <th>
+                    Trạng thái
+                  </th>
+                  <th>
+                    Loại ĐH
+                  </th>
+                  <th>
+                    Điểm xuất hàng
+                  </th>
+                  <th>
+                    Giờ vào
+                  </th>
+                  <th>
+                    Giờ ra
+                  </th>
+                  <th>
+
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    36T
+                  </td>
+                  <td>
+                    Nam Phương
+                  </td>
+                  <td>
+                    0021811
+                  </td>
+                  <td>
+                    Xi măng rời PCB40 CN - Tam Điệp
+                  </td>
+                  <td>
+                    35C 05245
+                  </td>
+                  <td>
+                    60
+                  </td>
+                  <td>
+                    57,78
+                  </td>
+                  <td>
+                    Hoàn thành
+                  </td>
+                  <td>
+                    Hợp đồng
+                  </td>
+                  <td>
+                    Tam Điệp
+                  </td>
+                  <td>
+                    21/03 16:52
+                  </td>
+                  <td>
+                    21/03 17:36
+                  </td>
+                  <td>
+                    <button class="btn btn-sm yellow filter-submit margin-bottom">
+                      <i class="fa fa-edit"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END PAGE CONTENT-->
+  </div>
+</div>
